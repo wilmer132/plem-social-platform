@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDom from 'react-dom'
 import {Grid, Typography} from '@material-ui/core';
 class PlemComponent extends React.Component {
   constructor(props) {
@@ -15,3 +16,8 @@ class PlemComponent extends React.Component {
     );
   }
 }
+
+ReactDom.render(
+  <PlemComponent />,
+  document.getElementById('plemapp')
+);
