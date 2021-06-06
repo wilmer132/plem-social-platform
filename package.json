@@ -1,0 +1,31 @@
+{
+  "name": "plem-project",
+  "version": "1.0.0",
+  "description": "Implementation of social platform with functionalities found at social websites like Twitter, Facebook, Instagram, etc.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
+    "client:build": "cd client && npm run build",
+    "client:build:w": "cd client && npm run build:w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilmer132/plem-social-platform.git"
+  },
+  "author": "Wilmer Zuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilmer132/plem-social-platform/issues"
+  },
+  "homepage": "https://github.com/wilmer132/plem-social-platform#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
