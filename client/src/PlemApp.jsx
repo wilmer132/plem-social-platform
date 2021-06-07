@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
+import './PlemApp.css';
 import axios from 'axios';
 
-class App extends React.Component {
+class PlemApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -27,4 +27,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default PlemApp;
