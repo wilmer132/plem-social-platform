@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from './node_modules/@testing-library/react';
 import PlemApp from './PlemApp';
 
 test('renders learn react link', () => {

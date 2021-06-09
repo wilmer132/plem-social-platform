@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PlemApp from './PlemApp';
+import PlemApp from './components/PlemApp/PlemApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
