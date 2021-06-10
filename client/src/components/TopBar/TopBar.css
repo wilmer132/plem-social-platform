@@ -1,0 +1,8 @@
+.toolbar-plembar {
+  justify-content: space-between;
+}
+
+.toolbar-group-left, .toolbar-group-right {
+  display: flex;
+  align-items: center;
+}
