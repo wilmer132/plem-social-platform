@@ -1,5 +1,6 @@
 /*Import dependencies*/
 const express = require('express');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
@@ -7,6 +8,15 @@ const path = require('path');
 const app = express();
 
 const port = process.env.PORT || 5000;
+
+/*Connect to mongodb database*/
+mongoose.connect('mongodb://localhost/plemDatabase', {useNewUrlParser: true});
+const connection = mongoose.connection;
+
+/*Ensure mongoose connection was established*/
+connection.once('open', function() {
+  console.log('Connection with MongoDB was successful.');
+});
 
 app.use((request, response, next) => {
   console.log(`Request Endpoint: ${request.method} ${request.url}`);
