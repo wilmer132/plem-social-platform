@@ -7,6 +7,7 @@ import axios from 'axios';
 /*Import custom components*/
 import TopBar from '../TopBar/TopBar';
 import UserList from '../UserList/UserList';
+import UserDetails from '../UserDetails/UserDetails';
 
 const plemStyle = {
   background: '#480ca8',
@@ -25,13 +26,18 @@ class PlemApp extends React.Component {
   render() {
     return (
       <HashRouter>
-        <Grid container spacing={8}>
+        <Grid container spacing={7}>
           <Grid item xs={12}>
             <TopBar style={plemStyle}/>
           </Grid>
           <Grid item sm={3}>
             <Paper>
               <UserList/>
+            </Paper>
+          </Grid>
+          <Grid item sm={9}>
+            <Paper>
+              <UserDetails />
             </Paper>
           </Grid>
         </Grid>

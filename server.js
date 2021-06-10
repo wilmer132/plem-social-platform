@@ -30,21 +30,21 @@ app.use(cors());
 
 /*Import router */
 const api = require('./routes/routes.js');
-app.use("/", api);
+app.use("/plem", api);
 
 
 /*Inform express app to serve compiled files*/
-if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
-  app.get('*', function (request, response) {
-    response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  });
-}
+// if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
+//   app.use(express.static(path.join(__dirname, 'client/build')));
+//   app.get('*', function (request, response) {
+//     response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+//   });
+// }
 
 /*--------------------------------GET REQUESTS----------------------------*/
-app.get('*', function(request, response) {
-  response.status(200).json({message: 'Catching all request'});
-});
+// app.get('*', function(request, response) {
+//   response.status(200).json({message: 'Catching all request'});
+// });
 
 /*Set up server to listen in on port*/
 app.listen(port, () => {console.log( `BACK_END_SERVICE_PORT: ${port}`)});
