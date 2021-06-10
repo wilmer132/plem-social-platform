@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 /*Connect to mongodb database*/
-mongoose.connect('mongodb://localhost/plemDatabase', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/plemDatabase', {useNewUrlParser: true, useUnifiedTopology: true});
 const connection = mongoose.connection;
 
 /*Ensure mongoose connection was established*/
