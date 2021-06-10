@@ -12,6 +12,7 @@ The Plem platform contains the following structure:
 In order to run this project from your local computer, after downloading the files, make sure to have the following modules installed:
   - npm
   - @material-ui/core
+  - @material-ui/core
   - react-router-dom
   - nodemon
 
