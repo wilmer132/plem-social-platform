@@ -42,4 +42,3 @@ npm run dev
 ```
 The first command will build the client website, updating any changes before displaying it to the user once hosted.
 The second command will run the client site along with the server, prompting the site on your default browser.
-
