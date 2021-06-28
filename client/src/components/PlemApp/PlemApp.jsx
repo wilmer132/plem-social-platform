@@ -25,7 +25,8 @@ class PlemApp extends React.Component {
 
   render() {
     return (
-      <HashRouter>
+      <div>
+      {/* <HashRouter> */}
         <Grid container spacing={7}>
           <Grid item xs={12}>
             <TopBar style={plemStyle}/>
@@ -41,7 +42,8 @@ class PlemApp extends React.Component {
             </Paper>
           </Grid>
         </Grid>
-      </HashRouter>
+      {/* </HashRouter> */}
+      </div>
     );
   }
 }
